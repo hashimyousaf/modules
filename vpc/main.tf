@@ -12,9 +12,7 @@ terraform {
   }
 }
 
-terraform {
-  backend "s3" {}
-}
+
 
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
