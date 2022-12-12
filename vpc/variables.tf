@@ -34,6 +34,12 @@ variable "enable_nat_gateway" {
   default     = false
 }
 
+variable "enable_vpn_gateway" {
+  description = "Should be true if you want to create a new VPN Gateway resource and attach it to the VPC"
+  type        = bool
+  default     = false
+}
+
 variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
